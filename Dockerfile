@@ -8,7 +8,7 @@
 #                                        docker stop mermaid-live-editor
 
 
-FROM node:13.6.0-alpine as mermaid-live-editor-builder
+FROM node:19.0.0-alpine as mermaid-live-editor-builder
 COPY --chown=node:node . /home
 WORKDIR /home
 RUN yarn install
